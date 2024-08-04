@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container_main {
+    display: flex; /* Utiliza flexbox para colocar los elementos uno al lado del otro */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    margin: auto;
+    width: 100%;
+    max-width: 100%; /* Asegura que no se desborde */
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+.section, .container {
+    width: 50%; /* Cada uno ocupa un 48% del contenedor principal para dejar espacio entre ellos */
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0; /* Añade un pequeño margen para separar los elementos */
+}
+
+.section {
+    background-color: #f7f7f7;
+}
+
+.container {
+    background-color: #535353;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enviarButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #454545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviarButton:hover {
+    background-color: #ff0000;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
+    z-index: 30;
+}
+
+#modalblock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 60%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    z-index: 60;
+    padding: 20px;
+}
+
+.ladoinfo {
+    display: flex;
+}
+
+.informacion {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.modalblocknav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cerrarModal {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contenido {
+    margin: 10px 80px;
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center; /* Alinea horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+    .container_main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .section, .container {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .enviarButton {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section, .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .enviarButton {
+        width: 100%;
+        font-size: 16px;
+    }
+}

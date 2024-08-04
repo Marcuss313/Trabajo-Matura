@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #bdbdbd;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:nth-child(2) a {
+    font-weight: bold; /* Aplica negrita al texto "Calculadora" */
+}
+
+nav ul li a:hover {
+    color: #d8d8d8; /* Cambia el color a un tono más oscuro cuando se hace hover */
+}
+
+.Bienvenidos {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 67%;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.botonCalculadora{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #ff0000;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+.Background {
+    text-align: center; /* Centra horizontalmente */
+    height: 45vh; /* Altura del 40% de la ventana visible */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.Background img {
+    width: 100%; /* Ocupa todo el ancho */
+    height: auto; /* Altura automática para mantener la proporción */
+    vertical-align: middle; /* Centra verticalmente */
+}
+
+
+.container {
+    display: flex; /* Utiliza flexbox para colocar los elementos uno al lado del otro */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    margin: auto;
+    justify-content: center;
+}
+
+.Reglajes,.Herramientas {
+    width: 40%; /* Calcula el ancho para que ambos ocupen el 50% del contenedor y deje un margen de 10px entre ellos */
+    background-color: #626262;
+    padding: 20px; /* Añade un espacio interno */
+    margin-bottom: 20px; /* Margen inferior para separar las secciones */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+    margin: 30px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+/* Estilo para los títulos Reglajes y Herramientas */
+.Reglajes h2,
+.Herramientas h2 {
+    font-size: 28px; /* Ajusta el tamaño de la fuente */
+}
+
+/* Estilo para los párrafos */
+.Reglajes p,
+.Herramientas p {
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    line-height: 1.5rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-container li {
+    display: inline;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+

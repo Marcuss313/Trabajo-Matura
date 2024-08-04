@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Kartingtool</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <script src="https://kit.fontawesome.com/74ddeae293.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Kartingtool</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container_main">
+        <div class="section">
+            <main>
+                <h3>Como obtener tu setup personalizado?</h3>
+                <p></p>
+            </main>
+        </div>
+        <div class="container">
+            <div class="contenido">
+                <form id="formulario">
+                    <h2>Características del circuito</h2>
+                    <div class="form-group">
+                        <label for="rectas">Rectas:</label>
+                        <select id="rectas" name="rectas">
+                            <option value="cortas">Cortas</option>
+                            <option value="largas">Largas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="curvas">Curvas:</label>
+                        <select id="curvas" name="curvas">
+                            <option value="reviradas">Reviradas</option>
+                            <option value="abiertas">Abiertas</option>
+                        </select>
+                    </div>
+
+                    <h2>Condiciones</h2>
+                    <div class="form-group">
+                        <label for="asfalto">Asfalto:</label>
+                        <select id="asfalto" name="asfalto">
+                            <option value="poco-grip">Poco Grip</option>
+                            <option value="mucho-grip">Mucho Grip</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="temperatura">Temperatura:</label>
+                        <select id="temperatura" name="temperatura">
+                            <option value="x-a-10">Menos de 10</option>
+                            <option value="11-20">Entre 10 y 19</option>
+                            <option value="21-a-y">Entre 20 y 29</option>
+                            <option value="30-a-y">Entre 30 a 39</option>
+                            <option value="40-a-y">Más de 39</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="compuesto">Compuesto:</label>
+                        <select id="compuesto" name="compuesto">
+                            <option value="duro">Duro</option>
+                            <option value="blando">Blando</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="estadoneumatico">Estado del Neumatico:</label>
+                        <select id="estadoneumatico" name="estadoneumatico">
+                            <option value="muybien">100% - 80%</option>
+                            <option value="bien">80% - 60%</option>
+                            <option value="normal">60% - 40%</option>
+                            <option value="mal">40% - 20%</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="meteorologia">Meteorología:</label>
+                        <select id="meteorologia" name="meteorologia">
+                            <option value="seco">Seco</option>
+                            <option value="mojado">Mojado</option>
+                        </select>
+                    </div>
+                    <button class="enviarButton" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="resultado"></div>
+    <div id="calculado"></div>
+    <div id="calculado1"></div>
+    <div id="calculado2"></div>
+
+    <script src="Reglajes/script-Anchodelantero.js"></script>
+    <script src="Reglajes/script-Anchotrasero.js"></script>
+    <script src="Reglajes/script-Alturatrasera.js"></script>
+    <script src="Reglajes/script-Alturadelantera.js"></script>
+</body>
+</html>
